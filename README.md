@@ -63,7 +63,7 @@ Make sure you have a valid OpenAI API key. You can create one [here](https://pla
 4.  Get an AI-generated answer based on the transcript.
 
 ## 📷 Example Screenshot
-
+![App Screenshot](UI.png)
 
 
 ---
