@@ -88,6 +88,6 @@ Make sure you have a valid OpenAI API key. You can create one [here](https://pla
 -   **Enhanced UI:**
     Improve the Streamlit UI to include features like a history of processed videos, the ability to manage and delete stored video indexes, and a clearer display of the retrieved source chunks.
 
-## 🪪 License
+## 🙌
 
-This project is licensed under the MIT License. Feel free to modify and use it for your own purposes.
+Feel free to modify and use it for your own purposes.
