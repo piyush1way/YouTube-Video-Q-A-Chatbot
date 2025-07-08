@@ -68,6 +68,26 @@ Make sure you have a valid OpenAI API key. You can create one [here](https://pla
 
 ---
 
+## 🚀 Future Enhancements
+
+-   **Playlist and Channel Support:**
+    Allow users to input a YouTube playlist or channel URL to create a chatbot that can answer questions across multiple videos, providing a much broader knowledge base.
+
+-   **Persistent Vector Storage:**
+    Integrate a persistent vector database like **ChromaDB** or **Pinecone**. This would allow the application to save processed video embeddings, so users don't have to re-process the same video every time they launch the app.
+
+-   **Source Linking with Timestamps:**
+    Enhance the answers by providing direct links to the specific timestamps in the YouTube video where the information was found. This would allow users to instantly verify the source of the answer.
+
+-   **Conversational Memory:**
+    Implement a chat history so the chatbot can remember the context of the current conversation, allowing users to ask follow-up questions like "Can you elaborate on that last point?".
+
+-   **Support for Other LLMs:**
+    Add a configuration option to switch between different language models, including open-source alternatives like models from Hugging Face, giving users more flexibility and control.
+
+-   **Enhanced UI:**
+    Improve the Streamlit UI to include features like a history of processed videos, the ability to manage and delete stored video indexes, and a clearer display of the retrieved source chunks.
+
 ## 🪪 License
 
 This project is licensed under the MIT License. Feel free to modify and use it for your own purposes.
