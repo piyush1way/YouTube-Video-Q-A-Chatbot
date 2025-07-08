@@ -2,18 +2,15 @@ import os
 import streamlit as st
 from openai import AuthenticationError, RateLimitError
 
-# Import the YouTubeChatbot class from your existing code
 from chatbot import YouTubeChatbot
-from youtube_utils import extract_video_id
+from youtube_utils import extract_video_id, TranscriptsDisabled, NoTranscriptFound
 
-# Page configuration
 st.set_page_config(
     page_title="YouTube Chatbot",
     page_icon="🎬",
     layout="centered"
 )
 
-# Add custom CSS for better styling
 st.markdown("""
 <style>
     .main-header {
@@ -123,6 +120,12 @@ if st.button("Process Video"):
                 st.error("Invalid OpenAI API key. Please check your API key and try again.")
             except RateLimitError:
                 st.error("OpenAI API rate limit exceeded. Please try again later.")
+            except TranscriptsDisabled:
+                st.error("This video does not have captions available. Please try a different video.")
+            except NoTranscriptFound:
+                st.error("No transcript found in the supported languages. Please try a different video.")
+            except ValueError as e:
+                st.error(f"Invalid input: {str(e)}")
             except Exception as e:
                 st.error(f"An error occurred: {str(e)}")
 
