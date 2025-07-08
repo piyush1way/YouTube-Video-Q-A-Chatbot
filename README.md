@@ -62,11 +62,6 @@ Make sure you have a valid OpenAI API key. You can create one [here](https://pla
 3.  Enter your question about the video content.
 4.  Get an AI-generated answer based on the transcript.
 
-## 📷 Example Screenshot
-
-*(Optional: Add a screenshot of your app UI here)*
-
----
 
 ## 🪪 License
 
